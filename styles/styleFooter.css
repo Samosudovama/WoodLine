@@ -1,0 +1,54 @@
+/* Стили для footer */
+footer {
+   width: 100%;
+   height: 7rem;
+   padding: 3rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   /* padding: 1rem; */
+
+   background-color: var(--nav-bg-color);
+}
+
+footer a {
+   color: white;
+   text-decoration: none;
+}
+
+footer a:hover {
+   cursor: pointer;
+   border-bottom: 0.2rem solid;
+}
+
+.footer-logo-container {
+   height: 6rem;
+   width: auto;
+}
+
+.footer-logo {
+   background-color: rgb(255, 255, 255, 0.2);
+   height: 100%;
+}
+
+.footer-logo img {
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   position: relative;
+
+   object-fit: cover;
+   display: block;
+   margin: auto;
+}
+
+.footer-left-txt {
+   text-align: left;
+   color: white;
+}
+
+.footer-right-txt {
+   text-align: end;
+   color: white;
+}

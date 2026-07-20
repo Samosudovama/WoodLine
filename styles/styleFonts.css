@@ -1,0 +1,28 @@
+/* Шрифты */
+
+/*Фигурный для лого*/
+@font-face {
+   font-family: "Sunday";
+   src: url("/fonts/sunday.woff2") format("woff2");
+
+   font-style: normal;
+   font-display: swap;
+}
+
+/*Средней жирности с засечками для заголовков шрифтов*/
+@font-face {
+   font-family: "Madelikesslab";
+   src: url("/fonts/madelikesslab.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}
+
+/*Средней жирности без засечек чистый для текстов*/
+@font-face {
+   font-family: "CaviarDreams";
+   src: url("/fonts/caviar_dreams.woff2") format("woff2");
+   font-weight: 400;
+   font-style: normal;
+   font-display: swap;
+}

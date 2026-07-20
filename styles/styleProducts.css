@@ -1,0 +1,41 @@
+.products_card {
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   align-items: center;
+   justify-items: start;
+   column-gap: 3ch; /*три ширины символа 0 из текущего шрифта*/
+   margin-bottom: 1rem;
+   border: 1px solid var(--products-card-border);
+   border-radius: 10px;
+
+   overflow: hidden; /*при наличии данной настройки сругляются уголочки img, без нее нет.*/
+}
+
+.products_card img {
+   display: block; /*Было снизу белое поле у некоторых изображ., лечится display:block*/
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+}
+
+.products_card_txt_wrapp {
+   display: inline;
+   max-width: 99%;
+   border: none;
+   text-align: left;
+}
+
+.products_card_txt {
+   padding-left: 3ch;
+   position: relative;
+   overflow-wrap: break-word;
+   font-family: var(--font-family-caviar-dreams);
+   letter-spacing: var(--p-latter-spacing);
+}
+
+.products_card_txt:before {
+   content: "—";
+   position: absolute;
+   left: 0;
+   top: 0;
+}

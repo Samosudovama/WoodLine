@@ -1,0 +1,111 @@
+@import url(/styles/styleFonts.css);
+@import url(/styles/styleHeader.css);
+@import url(/styles/styleNav.css);
+@import url(/styles/styleFooter.css);
+@import url(/styles/styleBurger.css);
+@import url(/styles/styleProducts.css);
+@import url(/styles/styleMap.css);
+@import url(/styles/styleGallery.css);
+@import url(/styles/styleAdaptiveLayout.css);
+
+:root {
+   /*Средней жирности с засечками для заголовков шрифтов*/
+   --font-family-madelikesslab: "Madelikesslab";
+
+   /*Средней жирности без засечек чистый для текстов*/
+   --font-family-caviar-dreams: "CaviarDreams";
+
+   /*Шрифт для логотипа*/
+   --font-family-sunday: "Sunday";
+
+   --body-text-color: #333;
+   --nav-bg-color: rgb(9, 141, 141);
+   --title-text-color: #e56102;
+   --nav-link-color: #f39450;
+
+   --title-letter-spacing: 0.07rem;
+   --h1-latter-spacing: 0.3rem;
+   --p-latter-spacing: 0.05rem;
+   --products-card-border: #e2dfdf;
+}
+
+/* Стили для основного контента */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #f4f4f4;
+   color: var(--body-text-color);
+}
+
+h1,
+h2 {
+   font-family: var(--font-family-madelikesslab);
+   color: var(--title-text-color);
+   letter-spacing: 0.3rem;
+   text-align: var(--h1-latter-spacing);
+
+   text-transform: uppercase;
+
+   position: relative;
+}
+
+h1 {
+   font-size: 1.8rem;
+}
+
+h2 {
+   font-size: 1.7rem;
+}
+
+h1::after {
+   content: "";
+   position: absolute;
+   bottom: -0.2rem; /* Смещение линии вниз на -0,2rem */
+   width: 70%; /* Линия занимает всю ширину текста */
+   height: 0.2rem; /* Высота линии */
+   background-color: var(--nav-bg-color); /* Цвет линии */
+   left: 15%;
+}
+
+p {
+   font-family: var(--font-family-caviar-dreams);
+   letter-spacing: var(--p-latter-spacing);
+   font-size: 1.4rem;
+   text-align: center;
+}
+
+a {
+   text-decoration: none;
+   color: var(--title-text-color);
+}
+
+main {
+   padding: 0;
+   max-width: 100%;
+   margin: 0 auto;
+}
+
+#page-title {
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+#page-title {
+   margin-bottom: 1rem;
+   color: var(--nav-bg-color);
+
+   font-family: var(--font-family-caviar-dreams);
+   letter-spacing: var(--title-letter-spacing);
+}
+
+#page-content {
+   line-height: 1.6;
+   color: #303030;
+
+   padding: 2rem;
+   margin-bottom: 9rem;
+}

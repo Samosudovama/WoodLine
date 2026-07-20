@@ -1,0 +1,28 @@
+.gallery_card {
+   /* display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   justify-items: start;
+   column-gap: 3rem;
+   row-gap: 3rem; */
+
+   /* border: 1px solid var(--products-card-border); */
+   /* border-radius: 10px; */
+
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+
+   margin-bottom: 1rem;
+   overflow: hidden;
+}
+
+.gallery_card img {
+   display: block; /*Было снизу белое поле у некоторых изображ., лечится display:block*/
+   width: 30%;
+   height: auto;
+   border-radius: 10px;
+   object-fit: cover;
+}

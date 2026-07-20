@@ -1,0 +1,53 @@
+/*Стили для nav*/
+
+.navbar {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 2rem 2rem;
+   background-color: var(--nav-bg-color);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+   position: sticky;
+   top: 0;
+   z-index: 2;
+   text-transform: uppercase;
+}
+
+.nav-menu {
+   list-style: none;
+   display: flex;
+   gap: 3rem;
+}
+
+.nav-link {
+   text-decoration: none;
+   /* color: var(--title-text-color); */
+   position: relative;
+   padding: 5px 10px;
+
+   font-weight: 800;
+
+   -webkit-text-stroke: 0.1rem var(--nav-link-color); /*Толщина и цвет контура через пробел*/
+   font-family: var(--font-family-caviar-dreams);
+   letter-spacing: 0.7rem;
+   font-size: 1.5rem;
+}
+
+.nav-link::after {
+   content: "";
+   position: absolute;
+   width: 0%;
+   height: 3px;
+   bottom: -5px; /* Отступ снизу от текста */
+   left: 0;
+   background-color: var(--nav-link-color);
+   transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* Плавная анимация */
+}
+
+.nav-link:hover::after {
+   width: 100%; /* При наведении линия выезжает */
+}
+
+.nav-link.active::after {
+   width: 100%; /* Когда кликнули и добавили класс active, линия остается */
+}

@@ -1,0 +1,51 @@
+@media (max-width: 1000px) {
+   .nav-link {
+      font-size: 1.2rem;
+   }
+
+   .gallery_card img {
+      width: 45%;
+   }
+}
+
+@media (max-width: 900px) {
+   .burger {
+      display: flex;
+   }
+
+   .nav-menu {
+      position: fixed;
+      top: 70px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 70px);
+      background-color: #fff;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2.5rem;
+      transition: left 0.5s ease-in-out;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   }
+
+   .gallery_card img {
+      width: 99%;
+   }
+
+   .nav-menu.active {
+      left: 0;
+   }
+
+   .nav-link {
+      font-size: 1.2rem;
+   }
+   .nav-link {
+      font-size: 1.1rem;
+   }
+
+   .headerLogo {
+      width: 45%;
+
+      bottom: 10%;
+   }
+}
